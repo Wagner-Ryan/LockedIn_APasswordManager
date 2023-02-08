@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.rpgController">
+    <children>
+        <Label alignment="CENTER" layoutX="136.0" layoutY="57.0" prefHeight="79.0" prefWidth="349.0" text="Random Password Generator">
+            <font>
+                <Font size="28.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="210.0" layoutY="136.0" prefHeight="26.0" prefWidth="180.0" style="-fx-border-style: solid;">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER_RIGHT" layoutX="161.0" layoutY="200.0" prefHeight="26.0" prefWidth="136.0" text="Length of Password:  ">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Button fx:id="backButton" alignment="CENTER" layoutX="39.0" layoutY="30.0" mnemonicParsing="false" onAction="#back" text="&lt;- Back">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+        <Label alignment="CENTER_RIGHT" layoutX="161.0" layoutY="240.0" prefHeight="26.0" prefWidth="136.0" text="UpperCase:  ">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <RadioButton layoutX="310.0" layoutY="246.0" mnemonicParsing="false" />
+        <Label alignment="CENTER_RIGHT" layoutX="161.0" layoutY="280.0" prefHeight="26.0" prefWidth="136.0" text="Special Character:  ">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <RadioButton layoutX="310.0" layoutY="286.0" mnemonicParsing="false" />
+        <Button layoutX="177.0" layoutY="331.0" mnemonicParsing="false" text="Generate">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+        <Button alignment="CENTER" layoutX="345.0" layoutY="331.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="118.0" text="Save Password">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+        <Button layoutX="296.0" layoutY="198.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" text="-" />
+        <Button layoutX="326.0" layoutY="198.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" text="+" />
+        <Label alignment="CENTER" layoutX="371.0" layoutY="198.0" prefHeight="30.0" prefWidth="39.0" style="-fx-border-style: solid;" text="12">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+      <Line endX="100.0" layoutX="99.0" layoutY="149.0" startX="51.0" startY="0.5" />
+      <Label layoutX="14.0" layoutY="141.0" prefHeight="17.0" prefWidth="136.0" text="Password Appears Hear" />
+      <Line endX="13.0" endY="-12.0" layoutX="429.0" layoutY="179.0" startX="-86.0" startY="10.0" />
+      <Label layoutX="450.0" layoutY="158.0" prefHeight="17.0" prefWidth="144.0" text="Control Password Length" />
+      <Line endX="46.0" layoutX="355.0" layoutY="253.0" startX="-14.0" />
+      <Label layoutX="404.0" layoutY="246.0" prefHeight="17.0" prefWidth="180.0" text="Click to mix in uppercase letters" />
+      <Line endX="37.0" layoutX="356.0" layoutY="294.0" startX="-20.0" />
+      <Label layoutX="395.0" layoutY="286.0" prefHeight="17.0" prefWidth="180.0" text="Click to mix in special characters" />
+      <Line endX="50.0" layoutX="117.0" layoutY="351.0" startX="31.0" startY="0.5" />
+      <Label layoutX="4.0" layoutY="343.0" prefHeight="17.0" prefWidth="144.0" text="Click to generate password">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Line endX="-34.5" layoutX="517.0" layoutY="352.0" startX="-50.5" />
+      <Label layoutX="487.0" layoutY="343.0" prefHeight="17.0" prefWidth="118.0" text="Click to save password">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+    </children>
+</Pane>

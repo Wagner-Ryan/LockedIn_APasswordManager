@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.rpgController">
+   <children>
+      <Label alignment="CENTER" layoutX="136.0" layoutY="44.0" prefHeight="79.0" prefWidth="349.0" text="Random Password Generator">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="passwordLabel" alignment="CENTER" layoutX="210.0" layoutY="123.0" prefHeight="26.0" prefWidth="180.0" style="-fx-border-style: solid;">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="161.0" layoutY="172.0" prefHeight="26.0" prefWidth="136.0" text="Length of Password:  ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="backButton" alignment="CENTER" layoutX="39.0" layoutY="30.0" mnemonicParsing="false" onAction="#back" text="&lt;- Back">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER_RIGHT" layoutX="161.0" layoutY="220.0" prefHeight="26.0" prefWidth="136.0" text="UpperCase:  ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="upperCaseButton" layoutX="310.0" layoutY="224.0" mnemonicParsing="false" onAction="#upperButtonClick" />
+      <Label alignment="CENTER_RIGHT" layoutX="161.0" layoutY="260.0" prefHeight="26.0" prefWidth="136.0" text="Special Character:  ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="specialCharButton" layoutX="310.0" layoutY="264.0" mnemonicParsing="false" onAction="#specialButtonClick" />
+      <Button fx:id="generateButton" layoutX="158.0" layoutY="340.0" mnemonicParsing="false" onAction="#generate" text="Generate">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="savePasswordButton" alignment="CENTER" layoutX="351.0" layoutY="340.0" mnemonicParsing="false" onAction="#savePassword" prefHeight="39.0" prefWidth="118.0" text="Save Password">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="minusButton" layoutX="296.0" layoutY="172.0" mnemonicParsing="false" onAction="#minus" prefHeight="30.0" prefWidth="30.0" text="-" />
+      <Button fx:id="plusButton" layoutX="326.0" layoutY="172.0" mnemonicParsing="false" onAction="#plus" prefHeight="30.0" prefWidth="30.0" text="+" />
+      <Label fx:id="length" alignment="CENTER" layoutX="371.0" layoutY="172.0" prefHeight="30.0" prefWidth="39.0" style="-fx-border-style: solid;" text="12">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="161.0" layoutY="296.0" prefHeight="26.0" prefWidth="136.0" text="Number:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="numberButton" layoutX="310.0" layoutY="300.0" mnemonicParsing="false" onAction="#numberButtonClick" />
+   </children>
+</Pane>
